@@ -1,0 +1,2 @@
+TestName,FirstName,LastName,PhoneNumber,Country,Email,Password,ExpectedMessage
+Displayed values after Register,John,Doe,1234567890,"Netherlands (Holland, Europe)",test@email.com,password,Successfully registered the following information

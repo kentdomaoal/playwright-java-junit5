@@ -1,0 +1,18 @@
+TestName,FirstName,LastName,PhoneNumber,Country,Email,Password,ExpectedMessage
+Valid PhoneNumber Format,John,Doe,1234567890,Netherlands,test@email.com,password,Successfully registered the following information
+Invalid PhoneNumber Format,John,Doe,abcdefghijk,Netherlands,test@email.com,password,PhoneNumber Format is invalid
+Invalid PhoneNumber Length (length=9),John,Doe,123456789,Netherlands,test@email.com,password,The phone number should contain at least 10 characters!
+Valid PhoneNumber Length (length=10),John,Doe,1234567890,Netherlands,test@email.com,password,Successfully registered the following information
+Valid PhoneNumber Length (length=11),John,Doe,12345678901,Netherlands,test@email.com,password,Successfully registered the following information
+Valid Email Format,John,Doe,1234567890,Netherlands,test@email.com,password,Successfully registered the following information
+Invalid Email Format,John,Doe,1234567890,Netherlands,aaabbbccc,password,Email Format is invalid
+Invalid Password Length (length=5),John,Doe,1234567890,"Netherlands (Holland, Europe)",test@email.com,passw,"The password should contain between [6,20] characters!"
+Valid Password Length (length=6),John,Doe,1234567890,"Netherlands (Holland, Europe)",test@email.com,psswrd,Successfully registered the following information
+Valid Password Length (length=7),John,Doe,1234567890,"Netherlands (Holland, Europe)",test@email.com,psswrd7,Successfully registered the following information
+Valid Password Length (length=19),John,Doe,1234567890,"Netherlands (Holland, Europe)",test@email.com,thisIsMyP@ssword_19,Successfully registered the following information
+Valid Password Length (length=20),John,Doe,1234567890,"Netherlands (Holland, Europe)",test@email.com,thisIsMyP@ssword_020,Successfully registered the following information
+Invalid Password Length (length=21),John,Doe,123456789,"Netherlands (Holland, Europe)",test@email.com,thisIsMyP@ssword_$021,"The password should contain between [6,20] characters!"
+Mandatory Field Last Name (blank value),John,"",0987654321,"Netherlands (Holland, Europe)",test@email.com,P@ssword_$2,Last Name is mandatory
+Mandatory Field Email (blank value),John,Doe,0987654321,"Netherlands (Holland, Europe)","",P@ssword_$2,Email is mandatory
+Mandatory Field PhoneNumber (blank value),John,Doe,"","Netherlands (Holland, Europe)",test@email.com,P@ssword_$2,The phone number should contain at least 10 characters!
+Mandatory Field Password (blank value),John,Doe,0987654321,"Netherlands (Holland, Europe)",test@email.com,"","The password should contain between [6,20] characters!"
