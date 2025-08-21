@@ -33,7 +33,7 @@ Allure Report was integrated for the Reporting.
 git clone https://github.com/kentdomaoal/playwright-java-junit5.git
 ```
 ``` 
-cd playwright-java-junit5.git
+cd playwright-java-junit5
 ```
 
 ### Install Dependencies
